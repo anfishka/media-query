@@ -1,0 +1,36 @@
+.circle{
+    width: 100px;
+    height: 100px;
+    background:rgb(179, 255, 0);
+    border-radius: 100%;
+}
+
+@media  (max-width:767px){
+    .circle{
+        width: 200px;
+        height: 200px;
+        background: rgb(0, 98, 255);
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .circle{
+        width: 200px;
+        height: 200px;
+        background: rgb(255, 34, 0);
+    }
+}
+
+@media (min-width:991px) and (max-width:1199px){
+    .circle{
+        width: 200px;
+        height: 200px;
+        background: rgb(0, 255, 187);
+    }
+}
+@media (min-width:1200px) {
+    .circle{
+        width: 200px;
+        height: 200px;
+        background: rgb(255, 0, 208);
+    }
+}
