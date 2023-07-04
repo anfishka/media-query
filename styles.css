@@ -25,7 +25,7 @@
        
       }
 }
-@media (min-width:801px)and(max-width:1200px){
+@media (min-width:801px) and (max-width:1200px){
     .img-devices{
         content: url('./laptop.avif');
     }
