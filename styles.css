@@ -1,29 +1,42 @@
-
-.image{
-   
+/* .img-devices{
+    width: 100px;
+    height: 100px;
+} */
+.image{  
    margin: 0 auto;
 }
 .txt{
-    /* content: ""; */
     font-weight: 900;
 }
 @media  (max-width:400px){
+    .img-devices{
+        content: url(./phone.avif);
+    }
   .txt::before{
     content: "Smartphone";
   }
 }
 @media  (min-width:401px) and (max-width:800px){
+    .img-devices{
+        content: url(./tab.png);
+    }
     .txt::before{
         content: "Tablet";
        
       }
 }
 @media (min-width:801px)and(max-width:1200px){
+    .img-devices{
+        content: url('./laptop.avif');
+    }
     .txt::before{
         content: "Laptop";
       }
 }
 @media (min-width:1201px){
+    .img-devices{
+        content: url('./telev.avif');
+    }
     .txt::before{
         content: "Television";
       }
