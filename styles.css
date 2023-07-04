@@ -1,42 +1,34 @@
-.circle{
-    width: 100px;
-    height: 100px;
-    background:rgb(179, 255, 0);
-    border-radius: 100%;
+
+.image{
+   
+   margin: 0 auto;
+}
+.txt{
+    /* content: ""; */
+    font-weight: 900;
 }
 @media  (max-width:400px){
-    .circle{
-        width: 200px;
-        height: 200px;
-        background: rgb(0, 98, 255);
-    }
+  .txt::before{
+    content: "Smartphone";
+  }
 }
-@media  (min-width:401) and (max-width:800px){
-    .circle{
-        width: 200px;
-        height: 200px;
-        background: rgb(0, 98, 255);
-    }
+@media  (min-width:401px) and (max-width:800px){
+    .txt::before{
+        content: "Tablet";
+       
+      }
 }
-@media (min-width:801px) and (max-width:900px){
-    .circle{
-        width: 200px;
-        height: 200px;
-        background: rgb(255, 34, 0);
-    }
+@media (min-width:801px)and(max-width:1200px){
+    .txt::before{
+        content: "Laptop";
+      }
 }
-
-@media (min-width:901px) and (max-width:1199px){
-    .circle{
-        width: 200px;
-        height: 200px;
-        background: rgb(0, 255, 187);
-    }
+@media (min-width:1201px){
+    .txt::before{
+        content: "Television";
+      }
 }
-@media (min-width:1200px) {
-    .circle{
-        width: 200px;
-        height: 200px;
-        background: rgb(255, 0, 208);
-    }
+img{
+    display: block;
+    width: 100%;
 }
