@@ -87,6 +87,7 @@ border-radius: 30%;
 }
 nav{
     overflow: hidden;
+    
 }
 nav a{
     background: #683e3e;
@@ -115,16 +116,21 @@ cursor: pointer;
     margin-left: 0px;
     color: aliceblue;
 }
-.links > li:nth-child(1){
-position: absolute;
 
-}
-li:not(.special){
+.links > li:not(.special){
     display: none;
-}
-li:not(.special):hover{
     
 }
+
+.links:hover > li:not(.special) {
+    display: block;
+
+}
+
+.links:hover >.special {
+display: none;
+}
+
 ul:hover{ 
     margin: 0;
 }
