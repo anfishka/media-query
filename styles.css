@@ -2,23 +2,35 @@
     width: 100px;
     height: 100px;
 } */
+body{
+    background: #000;
+    color: aliceblue;
+    
+}
+.txt{
+    margin: 20px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 34px;
+}
 .image{  
-   margin: 0 auto;
+    margin-top:5%;
 }
 .txt{
     font-weight: 900;
 }
 @media  (max-width:400px){
     .img-devices{
-        content: url(./phone.avif);
+        content: url(./img/phone.png);
     }
-  .txt::before{
+    .txt::before{
     content: "Smartphone";
   }
 }
 @media  (min-width:401px) and (max-width:800px){
     .img-devices{
-        content: url(./tab.png);
+        content: url(./img/tabs.png);
     }
     .txt::before{
         content: "Tablet";
@@ -27,7 +39,7 @@
 }
 @media (min-width:801px) and (max-width:1200px){
     .img-devices{
-        content: url('./laptop.avif');
+        content: url('./img/laptop.png');
     }
     .txt::before{
         content: "Laptop";
@@ -35,7 +47,7 @@
 }
 @media (min-width:1201px){
     .img-devices{
-        content: url('./telev.avif');
+        content: url('./img/tv.png');
     }
     .txt::before{
         content: "Television";
@@ -44,4 +56,79 @@
 img{
     display: block;
     width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.menu-img{
+width: 50px;
+height: 50px;
+border-radius: 30%;
+}
+.menu-img:hover{
+
+}
+nav{
+    overflow: hidden;
+}
+nav a{
+    background: #683e3e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+   
+}
+.links {
+    width: 90px;
+   
+}
+.links > li{
+padding-top: 5px ;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+cursor: pointer;
+
+}
+.links > li:hover{
+    padding-top: 5px ;
+    color: #365d98;
+    }
+
+.links:hover{   
+    width: 90px;
+    margin-left: 0px;
+    color: aliceblue;
+}
+.links > li:nth-child(1){
+position: absolute;
+
+}
+li:not(.special){
+    display: none;
+}
+li:not(.special):hover{
+    
+}
+ul:hover{ 
+    margin: 0;
+}
+
+.links > li:nth-child(1):hover{
+    margin-left: -89px;
 }
